@@ -1,225 +1,141 @@
 body
 {
+    padding: 0px;
     margin: 0px;
-    display: flex;
-    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(./images/—Pngtree—abstract\ cute\ background\ portfolio_1447420.png);
+
 }
-.container
+a
+{
+    text-decoration: none;
+}
+.main-Head-Container
+{
+    display:grid;
+    justify-content: center;
+}
+
+.main-Head-Container h1, .main-Head-Container h2
+{
+    text-align: center;
+}
+
+.main-Head-Container p
+{
+    margin:auto;
+}
+.main-Head-Container p a
+{
+    text-decoration: none;
+    color: blue;
+
+}
+
+.mainContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100hv;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: calc(19%);
+}
+.boxesContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+}
+.boxes
+{
+    width: 350px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: 3px 3px 5px 1px rgb(0, 0, 0,1);
+}
+
+.boxes:hover
+{
+    box-shadow: 3px 3px 20px 1px black;
+}
+
+.box-1-elements
 {
     width: 100%;
-    margin: 0;
-    padding: 0;
+    height: 100%;
+    display: flex;
+
 }
-.nav-container
+.box-1-image, .box-2-image
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.box-1-image
+{
+    background-size: cover;
+    background-image: url(./images/Supermarket-475x280.png);
+}
+
+.box-2-image
+{
+    background-size: cover;
+    background-image: url(./images/The-7-Elements-Every-Great-Portfolio-Website-Needs-Featured-Img.jpg.webp);
+}
+
+.box-1-text
 {
     display: flex;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     align-items: center;
-    justify-content:space-around;
+    align-content: center;
+    justify-content: center;
     background-color: black;
+    border-radius: 10px;
+    opacity: 70%;
 }
 
-hr
+.box-1-text h2
 {
-    color: red;
-    margin: 0;
-}
-.nav-container a, .footer-container a
-{
-    text-transform: capitalize;
     color: white;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
+    text-transform:uppercase;
+    text-align: center;
+    text-shadow: rgb(255, 255, 255, 1) 1px 1px 1px;
 }
 
-.nav-container a::after, .footer-container a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #e74c3c;
-    transition: width 0.3s ease;
+.box-1-text h2:hover
+{
+    transition: 0.1s;
+    font-size: 24.5px;
+    text-shadow: rgb(255, 255, 255, 1) 1px 1px 3px;
 }
 
-.nav-container a:hover::after, .footer-container a:hover::after {
-    width: 100%;
+.box-1-text p
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size:small;
 }
 
-.nav-container a:hover, .footer-container a:hover
+.box-1-text p:hover
 {
-    transition: 0.5s;
-    color: #e74c3c;
-}
-
-.image-container
-{
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-.social-Media
-{
-    width: 100%;
-    gap: 19px;
-}
-.image-socail-container
-{
-    height: 25px;
-    width: 25px;
-}
-
-img
-{
-    width: 100%; 
-}
-.image-container img
-{
-    width: 100%;
-    border-radius: 50%;
-    border: red solid 1px;
-}
-
-.image-container img:hover
-{
-        border: red solid 3px;
-        transition: 0.3s;    
-}
-
-.facebook, .instagram, .twitter
-{
-    margin-top: 2px;
-}
-
-nav ul
-{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-}
-
-nav ul li .social-Media
-{
-    display: flex;
-    width: 100%;
-}
-
-a{
-    text-decoration: none;
-}
-
-.Protfolio-image
-{
-    display: flex;
-    width: 100%;
-    height: 600px;
-}
-
-.Protfolio-Collected-works
-{
-    display: felx;
-    width: 100%;
-    height: 400px;
-}
-
-.footerListContainer
-{
-    display: block;
-    width: 100%;
-    background-color:rgb(245, 245, 245);
-}
-
-.collection-works-container
-{
-    background-color: #e0e0e0;
-}
-
-.collection-works-container-img
-{
-    width: 90%;
-    margin: auto;
-    padding-top: 30px;
-    align-items: center;
-    justify-items: center;
-}
-
-.text-footer
-{
-    display: flex;
-    flex-direction: column;
-    width:80%;
-    margin: auto;
-    justify-items: center;
-    align-items: center;
-}
-.Protfolio-Collected-works h4
-{
-    padding-top: 50px;
-    text-transform: uppercase;
-}
-
-.Protfolio-Collected-works ul
-{
-    list-style: none;
-}
-.footerListContainer ul
-{
-
-    margin: 0px;
-    padding:30px;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.Protfolio-Collected-works h5
-{
-    color: rgb(84, 84, 84);
-    text-transform: capitalize;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    font-size: small;
-}
-
-.Protfolio-Collected-works p
-{
-    color: rgb(134, 134, 134);
-    text-transform: capitalize;
-    padding-left: 30px;
-}
-
-.footer-container
-{
-    width: 80%;
-    margin: auto;
-    height: 10px;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 100px;
-}
-
-.footer-container ul
-{
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    list-style: none;
-}
-
-.footer-container a
-{
-    color: rgb(70, 70, 70);
-}
-
-.footer-container h5
-{
-    color: rgb(70, 70, 70);
+    transition: 0.1s;
+    font-size: 13.5px;
+    text-decoration: underline;
+    text-decoration-color: rgb(91, 91, 91);
+    text-shadow: rgb(255, 255, 255) 1px 1px 3px;
 }
