@@ -6,12 +6,12 @@ body
 }
 .BackToRecentWork
 {
-    width: 100hv;
+    width: 100hdv;
     height: 50px;
     background-color: #780000;
     display: flex;
     justify-content: space-between;
-    padding: 0px 10%;
+    padding: 0px 5%;
 }
 .BackToRecentWork h2
 {
@@ -22,7 +22,7 @@ body
 }
 .BackToRecentWork button, .BackToRecentWork a
 {
-    width: 150px;
+    width: 120px;
     height: 40px;
     margin: auto;
     border-radius: 10px;
