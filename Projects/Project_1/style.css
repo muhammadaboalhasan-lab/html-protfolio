@@ -23,9 +23,11 @@ body
 }
 .BackToRecentWork h2
 {
-    margin: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     color: white;
-    text-align: center;
     text-transform: capitalize;
 }
 .BackToRecentWork button, .BackToRecentWork a
