@@ -143,3 +143,10 @@ a
     text-decoration-color: rgb(91, 91, 91);
     text-shadow: rgb(255, 255, 255) 1px 1px 3px;
 }
+
+._main_ p
+{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
