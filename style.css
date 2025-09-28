@@ -9,7 +9,6 @@ body
     background-image: url(./images/—Pngtree—abstract\ cute\ background\ portfolio_1447420.png);
 
 }
-
 a
 {
     text-decoration: none;
@@ -104,7 +103,7 @@ a
 .box-3-image
 {
     background-size: cover;
-    background-image: url(./Projects/Project_3/images/2.jpg);
+    background-image: url(./images/2.jpg);
 }
 
 .box-1-text
