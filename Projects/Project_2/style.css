@@ -4,6 +4,7 @@ body
     display: flex;
     flex-direction: column;
 }
+
 .BackToRecentWork
 {
     width: 100hdv;
@@ -33,6 +34,7 @@ body
     color: white;
     border-color: #fdf0d5;
 }
+
 .container
 {
     width: 100%;

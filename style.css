@@ -9,6 +9,7 @@ body
     background-image: url(./images/—Pngtree—abstract\ cute\ background\ portfolio_1447420.png);
 
 }
+
 a
 {
     text-decoration: none;
@@ -98,6 +99,12 @@ a
 {
     background-size: cover;
     background-image: url(./images/The-7-Elements-Every-Great-Portfolio-Website-Needs-Featured-Img.jpg.webp);
+}
+
+.box-3-image
+{
+    background-size: cover;
+    background-image: url(../html-protfolio-main/Projects/Project_3/images/3.jpg);
 }
 
 .box-1-text

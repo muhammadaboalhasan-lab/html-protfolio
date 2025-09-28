@@ -1,0 +1,218 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-image: url(./images/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.BackToRecentWork
+{
+    width: 100hdv;
+    height: 50px;
+    background-color: #780000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+}
+.BackToRecentWork h2
+{
+    margin: auto;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+.BackToRecentWork button, .BackToRecentWork a
+{
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: large;
+    background-color:#c1121f;
+    color: white;
+    border-color: #fdf0d5;
+}
+.Main-container
+{
+    display: flex;
+}
+
+
+.Selection-container
+{
+    display: flex;
+}
+
+.Main-Top-Container
+{
+    width: 100%;
+    height: 70px;
+}
+
+.top-container
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/recipes-logo-png-13.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+}
+
+.Main-Left-Container
+{
+    width: 40%;
+    min-height: 600px;
+    border-top: solid white 1.5px;
+    border-left: solid white 3px;
+    border-right: solid rgb(0, 0, 0, 0.1) 1px;
+    border-right: solid rgb(0, 0, 0, 0.1) 3px;
+    border-radius: 45px;
+    margin: 10px;
+}
+
+
+.left-container
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    background-color: rgb(255, 255, 255, 0.25);
+    backdrop-filter: blur(3px);
+    filter: brightness(105%);
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    
+}
+
+.left-container h3, .right-container h3
+{
+    font-size: medium;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.left-container ul
+{
+
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+}
+
+.left-container li
+{
+    font-size: small;
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.right-container ol
+{
+    display: flex;
+    flex-direction: column;
+    gap : 25px;
+}
+
+.right-container li
+{
+    font-size: medium;
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Main-Right-Container
+{
+    width: 60%;
+    min-height: 600px;
+    border-top: solid white 1.5px;
+    border-left: solid white 3px;
+    border-right: solid rgb(0, 0, 0, 0.1) 1px;
+    border-right: solid rgb(0, 0, 0, 0.1) 3px;
+    border-radius: 45px;
+    margin: 10px;
+}
+
+.right-container
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    background-color: rgb(255, 255, 255, 0.25);
+    backdrop-filter: blur(3px);
+    filter: brightness(105%);
+}
+
+.MainMenu
+{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+.image-container
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.Selection-container img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit:cover;
+    transition:  transform(400ms);
+}
+
+.MainMenu  ul
+{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 13px;
+
+    border: 3px solid rgb(192, 192, 192, 0.7);
+    border-radius: 45px;
+    background-color: rgba(233, 233, 233, 0.5);
+}
+
+
+.Selection-container a:hover
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px, solid rgb(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Selection-container img:hover
+{
+    transition:  0.3s;
+    transform: scale(1.2);
+}
+
+.Selection-container .image-container:hover
+{
+    transition:  0.3s;
+    transform: scale(1.1);
+}
