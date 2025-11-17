@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Smart Calculator</title>
+</head>
+<body>
+
+    <div class="BackToRecentWork">
+        <h2>back to the Main Page</h2>
+        <a href="../../index.html"><button type="button">back</button></a>
+    </div>
+
+    <div class="background-gradient"></div>
+    <div id="Tset_ID">
+        <div id="Main-Contaiber_ID" class="Main-Contaiber">
+
+            <!-- Module 5: Calculator (Basic) -->
+            <div class="div-main-style div_5 calculator-card">
+                <div class="div-style">
+                    <div class="header-style calculator-header">
+                        <div class="icon-wrapper calculator-icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                <line x1="8" y1="6" x2="16" y2="6"></line>
+                                <line x1="8" y1="10" x2="16" y2="10"></line>
+                                <line x1="8" y1="14" x2="10" y2="14"></line>
+                                <line x1="14" y1="14" x2="16" y2="14"></line>
+                                <line x1="8" y1="18" x2="10" y2="18"></line>
+                                <line x1="14" y1="18" x2="16" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3>Calculator</h3>
+                        <p>Simple Calculator</p>
+                    </div>
+                    <div id="Result-Box_5" class="p-style-calc">
+                        <p></p>
+                    </div>
+                    <div class="Calc-Div">
+                        <div><input id="button_1_ID" class="calc-button number-btn" type="button" onclick="Calc_button_1()" value="1"></div>
+                        <div><input id="button_2_ID" class="calc-button number-btn" type="button" onclick="Calc_button_2()" value="2"></div>
+                        <div><input id="button_3_ID" class="calc-button number-btn" type="button" onclick="Calc_button_3()" value="3"></div>
+                        <div><input id="button_4_ID" class="calc-button operator-btn" type="button" onclick="Calc_button_4()" value="+"></div>
+                        <div><input id="button_5_ID" class="calc-button number-btn" type="button" onclick="Calc_button_5()" value="4"></div>
+                        <div><input id="button_6_ID" class="calc-button number-btn" type="button" onclick="Calc_button_6()" value="5"></div>
+                        <div><input id="button_7_ID" class="calc-button number-btn" type="button" onclick="Calc_button_7()" value="6"></div>
+                        <div><input id="button_8_ID" class="calc-button operator-btn" type="button" onclick="Calc_button_8()" value="-"></div>
+                        <div><input id="button_9_ID" class="calc-button number-btn" type="button" onclick="Calc_button_9()" value="7"></div>
+                        <div><input id="button_10_ID" class="calc-button number-btn" type="button" onclick="Calc_button_10()" value="8"></div>
+                        <div><input id="button_11_ID" class="calc-button number-btn" type="button" onclick="Calc_button_11()" value="9"></div>
+                        <div><input id="button_12_ID" class="calc-button operator-btn" type="button" onclick="Calc_button_12()" value="*"></div>
+                        <div><input id="button_13_ID" class="calc-button clear-btn" type="button" onclick="Calc_button_13()" value="C"></div>
+                        <div><input id="button_14_ID" class="calc-button number-btn zero-btn" type="button" onclick="Calc_button_14()" value="0"></div>
+                        <div><input id="button_15_ID" class="calc-button equals-btn" type="button" onclick="Calc_button_15()" value="="></div>
+                        <div><input id="button_16_ID" class="calc-button operator-btn" type="button" onclick="Calc_button_16()" value="/"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module 1: National ID -->
+            <div class="div-main-style div_1">
+                <div class="div-style">
+                    <div class="header-style">
+                        <div class="icon-wrapper">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3>National ID</h3>
+                        <p>Enter National ID Number</p>
+                    </div>
+                    <div class="div-input-style">
+                        <input id="input_div_1" class="input-style" type="text" placeholder="National ID Number">
+                    </div>
+                    <div>
+                        <button class="button-style" type="button" onclick="NationalID()">
+                            <span>Validate</span>
+                        </button>
+                    </div>
+                    <div id="Actions_ID_1" class="OrderList-style actions">
+                        <ul id="UL-Actions_1">
+                            <li>Must not be empty</li>
+                            <li>Length 9 Digits</li>
+                            <li>Digits Only</li>
+                        </ul>
+                    </div>
+                    <div id="Result-Box_1" class="p-style">
+                        <p>Result</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 2: Prime Numbers -->
+            <div class="div-main-style div_2">
+                <div class="div-style">
+                    <div class="header-style">
+                        <div class="icon-wrapper">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3>Prime Numbers</h3>
+                        <p>Enter a number to check</p>
+                    </div>
+                    <div class="div-input-style">
+                        <input id="input_div_2" class="input-style" type="text" placeholder="Number">
+                    </div>
+                    <div>
+                        <button class="button-style" type="button" onclick="PrimeNumbers()">
+                            <span>Validate</span>
+                        </button>
+                    </div>
+                    <div id="Actions_ID_2" class="OrderList-style actions">
+                        <ul id="UL-Actions_2">
+                            <li>Must not be empty</li>
+                            <li>Must be an integer</li>
+                            <li>Digits Only</li>
+                        </ul>
+                    </div>
+                    <div id="Result-Box_2" class="p-style">
+                        <p>Result</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 3: Spacing (Capitalization) -->
+            <div class="div-main-style div_3">
+                <div class="div-style">
+                    <div class="header-style">
+                        <div class="icon-wrapper">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="4" y1="9" x2="20" y2="9"></line>
+                                <line x1="4" y1="15" x2="20" y2="15"></line>
+                                <line x1="10" y1="3" x2="8" y2="21"></line>
+                                <line x1="16" y1="3" x2="14" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3>Spacing</h3>
+                        <p>Add space before capital letters</p>
+                    </div>
+                    <div class="div-input-style">
+                        <input id="input_div_3" class="input-style" type="text" placeholder="Example:HelloWorld">
+                    </div>
+                    <div>
+                        <button class="button-style" type="button" onclick="SpacingBetweenLetters()">
+                            <span>Validate</span>
+                        </button>
+                    </div>
+                    <div id="Actions_ID_3" class="OrderList-style actions">
+                        <ul id="UL-Actions_3">
+                            <li>Must not be empty</li>
+                            <li>Must be an integer</li>
+                            <li>Digits Only</li>
+                        </ul>
+                    </div>
+                    <div id="Result-Box_3" class="p-style">
+                        <p>Result</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 4: Search (Character Repetition) -->
+            <div class="div-main-style div_4">
+                <div class="div-style">
+                    <div class="header-style">
+                        <div class="icon-wrapper">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <h3>Search</h3>
+                        <p>Count repetition of a character set in a word/sentence</p>
+                    </div>
+                    <div class="div-input-style">
+                        <input id="input_div_4" class="input-style" type="text" placeholder="Main Word/Sentence">
+                    </div>
+                    <div class="div-input-style">
+                        <input id="input_div_4_2" class="input-style" type="text" placeholder="Character/Set to search for">
+                    </div>
+                    <div>
+                        <button class="button-style" type="button" onclick="RepeatedDigitSet()">
+                            <span>Validate</span>
+                        </button>
+                    </div>
+                    <div id="Actions_ID_4" class="OrderList-style actions">
+                        <ul id="UL-Actions_4">
+                            <li>Must not be empty</li>
+                            <li>Must be an integer</li>
+                            <li>Digits Only</li>
+                        </ul>
+                    </div>
+                    <div id="Result-Box_4" class="p-style">
+                        <p>Result</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 6: Sorting (Alphabetical) -->
+            <div class="div-main-style div_6">
+                <div class="div-style">
+                    <div class="header-style">
+                        <div class="icon-wrapper">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3>Sorting</h3>
+                        <p>Alphabetical Sorting</p>
+                    </div>
+                    <div class="div-input-style">
+                        <input id="input_div_6" class="input-style" type="text" placeholder="Random Word">
+                    </div>
+                    <div>
+                        <button class="button-style" type="button" onclick="SortMethod()">
+                            <span>Validate</span>
+                        </button>
+                    </div>
+                    <div id="Actions_ID_6" class="OrderList-style actions">
+                        <ul id="UL-Actions_6">
+                            <li>Must not be empty</li>
+                            <li>Must be an integer</li>
+                            <li>Digits Only</li>
+                        </ul>
+                    </div>
+                    <div id="Result-Box_6" class="p-style">
+                        <p>Result</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

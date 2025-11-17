@@ -1,0 +1,51 @@
+/* تطبيق الخط الافتراضي */
+body {
+    font-family: 'Inter', sans-serif;
+}
+/* أيقونات SVG بسيطة كبديل */
+.icon {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+    fill: none;
+    stroke: currentColor;
+}
+/* إضافة التمرير السلس */
+html {
+    scroll-behavior: smooth;
+}
+
+/* إضافة هامش علوي للأقسام المستهدفة لتجنب تغطية الشريط العلوي (الذي هو sticky) */
+#women-section, #men-section, #kids-section, #sale-section {
+    scroll-margin-top: 6.5rem; /* حوالي 104 بكسل، لتعويض ارتفاع الشريط الثابت وضمان رؤية العنوان بالكامل */
+}
+
+.BackToRecentWork
+{
+    width: 100hdv;
+    height: 50px;
+    background-color: #780000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+}
+.BackToRecentWork h2
+{
+    margin: auto;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+.BackToRecentWork button, .BackToRecentWork a
+{
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: large;
+    background-color:#c1121f;
+    color: white;
+    border-color: #fdf0d5;
+}

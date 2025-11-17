@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع شبيه بـ Castro</title>
+    <!-- تحميل Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- تحميل خط Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- ربط بملف الأنماط الخارجي -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="bg-white text-gray-900">
+    <div class="BackToRecentWork">
+        <h2>back to the Main Page</h2>
+        <a href="../../index.html"><button type="button">back</button></a>
+    </div>
+    <!-- 1. الشريط العلوي -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="bg-gray-100 text-center p-2 text-sm font-medium">
+            משלוח חינם בקנייה מעל 199 ₪
+        </div>
+
+        <!-- 2. الشريط الرئيسي (شعار، بحث، أيقونات) -->
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- أيقونة القائمة (للموبايل) -->
+            <div class="md:hidden">
+                <svg class="icon" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </div>
+
+            <!-- الشعار -->
+            <div class="text-3xl font-bold tracking-wider">
+                <a href="#">CASTRO</a>
+            </div>
+
+            <!-- روابط الملاحة الرئيسية (للسطح المكتب) -->
+            <div class="hidden md:flex items-center space-x-6 space-x-reverse">
+                <a href="#women-section" class="text-gray-700 hover:text-black font-medium">נשים</a>
+                <a href="#men-section" class="text-gray-700 hover:text-black font-medium">גברים</a>
+                <a href="#kids-section" class="text-gray-700 hover:text-black font-medium">ילדים</a>
+                <a href="#sale-section" class="text-red-600 hover:text-red-700 font-bold">SALE</a>
+            </div>
+
+            <!-- أيقونات (بحث، مستخدم، سلة) -->
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button aria-label="חיפוש">
+                    <svg class="icon" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </button>
+                <button aria-label="חשבון">
+                    <svg class="icon" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                </button>
+                <button aria-label="סל קניות" class="relative">
+                    <svg class="icon" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 3. المحتوى الرئيسي -->
+    <main>
+        <!-- قسم الهيرو (صورة رئيسية ثابتة بدلاً من سلايدر) -->
+        <section class="w-full h-[60vh] md:h-[80vh] bg-gray-200">
+            <img src="https://placehold.co/1600x900/E2E8F0/94A3B8?text=Hero+Banner" alt="מודל אופנה" class="w-full h-full object-cover object-center">
+            <!-- يمكنك استبدال src بالرابط الفعلي للصورة الرئيسية من موقع كاسترو -->
+        </section>
+
+        <!-- لافتات ترويجية -->
+        <section class="container mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <a href="#" class="block bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://placehold.co/400x500/FEE2E2/DC2626?text=SALE" alt="מבצע" class="w-full h-full object-cover">
+            </a>
+            <a href="#" class="block bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://placehold.co/400x500/DBEAFE/1D4ED8?text=New+Collection" alt="קולקציה חדשה" class="w-full h-full object-cover">
+            </a>
+            <a href="#" class="block bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://placehold.co/400x500/D1FAE5/047857?text=Men" alt="גברים" class="w-full h-full object-cover">
+            </a>
+            <a href="#" class="block bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <img src="https://placehold.co/400x500/FEF3C7/D97706?text=Kids" alt="ילדים" class="w-full h-full object-cover">
+            </a>
+        </section>
+
+        <!-- قسم النساء -->
+        <section id="women-section" class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold text-center mb-8">נשים - NEW COLLECTION</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">
+                
+                <!-- بطاقة منتج 1 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/E0E7FF/3730A3?text=Women+Product+1" alt="מוצר 1" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">שמלת מיני</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">149.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 2 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/E0E7FF/3730A3?text=Women+Product+2" alt="מוצר 2" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">חולצת טי-שירט</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">79.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 3 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/E0E7FF/3730A3?text=Women+Product+3" alt="מוצר 3" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">מכנסי ג'ינס</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">199.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 4 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/E0E7FF/3730A3?text=Women+Product+4" alt="מוצר 4" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">סריג אוברסייז</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">179.90 ₪</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- لافتة وسطى -->
+        <section class="container mx-auto px-4 py-8">
+            <div class="bg-gray-800 text-white p-12 rounded-lg text-center">
+                <h3 class="text-4xl font-bold mb-4">BLACK FRIDAY</h3>
+                <p class="text-xl mb-6">מבצעים מיוחדים בקרוב</p>
+                <a href="#sale-section" class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors">לכל המבצעים</a>
+            </div>
+        </section>
+
+        <!-- قسم الرجال -->
+        <section id="men-section" class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold text-center mb-8">גברים</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">
+                
+                <!-- بطاقة منتج 1 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/D1FAE5/047857?text=Men+Product+1" alt="מוצר 1" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">חולצת פולו</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">129.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 2 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/D1FAE5/047857?text=Men+Product+2" alt="מוצר 2" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">מכנסי ברמודה</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">159.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 3 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/D1FAE5/047857?text=Men+Product+3" alt="מוצר 3" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">ג'קט ג'ינס</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">249.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 4 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/D1FAE5/047857?text=Men+Product+4" alt="מוצר 4" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">סניקרס</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">199.90 ₪</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- قسم الأطفال -->
+        <section id="kids-section" class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold text-center mb-8">ילדים</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">
+                
+                <!-- بطاقة منتج 1 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/FEF3C7/D97706?text=Kids+Product+1" alt="מוצר 1" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">סט פיג'מה</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">89.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 2 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/FEF3C7/D97706?text=Kids+Product+2" alt="מוצר 2" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">שמלה לילדות</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">119.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 3 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/FEF3C7/D97706?text=Kids+Product+3" alt="מוצר 3" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">מכנסי טרנינג</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">79.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 4 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/FEF3C7/D97706?text=Kids+Product+4" alt="מוצר 4" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">קפוצ'ון</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700">99.90 ₪</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- قسم التخفيضات (SALE) -->
+        <section id="sale-section" class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-red-600">SALE</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">
+                
+                <!-- بطاقة منتج 1 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/FEE2E2/DC2626?text=Sale+Product+1" alt="מוצר 1" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">שמלה בהנחה</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700"><span class="line-through text-gray-500">199.90 ₪</span> 99.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 2 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/FEE2E2/DC2626?text=Sale+Product+2" alt="מוצר 2" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">ג'ינס סייל</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700"><span class="line-through text-gray-500">249.90 ₪</span> 149.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 3 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/FEE2E2/DC2626?text=Sale+Product+3" alt="מוצר 3" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">חולצה מכופתרת</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700"><span class="line-through text-gray-500">179.90 ₪</span> 89.90 ₪</p>
+                </div>
+
+                <!-- بطاقة منتج 4 -->
+                <div class="group">
+                    <div class="w-full bg-gray-200 rounded-lg overflow-hidden aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x600/FEE2E2/DC2626?text=Sale+Product+4" alt="מוצר 4" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">סריג</h3>
+                    <p class="mt-1 text-md font-semibold text-gray-700"><span class="line-through text-gray-500">199.90 ₪</span> 99.90 ₪</p>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 4. الفوتر -->
+    <footer class="bg-gray-100 text-gray-700 mt-16">
+        <div class="container mx-auto px-4 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- عمود 1: مساعدة ومعلومات -->
+            <div>
+                <h4 class="font-bold text-lg mb-4">עזרה ומידע</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">שירות לקוחות</a></li>
+                    <li><a href="#" class="hover:underline">משלוחים והחזרות</a></li>
+                    <li><a href="#" class="hover:underline">איתור הזמנה</a></li>
+                    <li><a href="#" class="hover:underline">שאלות נפוצות</a></li>
+                </ul>
+            </div>
+            <!-- عمود 2: حول كاسترو -->
+            <div>
+                <h4 class="font-bold text-lg mb-4">אודות קסטרו</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">אודות</a></li>
+                    <li><a href="#" class="hover:underline">חנויות</a></li>
+                    <li><a href="#" class="hover:underline">דרושים</a></li>
+                    <li><a href="#" class="hover:underline">תנאי שימוש</a></li>
+                </ul>
+            </div>
+            <!-- عمود 3: اشتراك -->
+            <div>
+                <h4 class="font-bold text-lg mb-4">הירשמו לניוזלטר</h4>
+                <p class="mb-4">וקבלו 10% הנחה לקנייה הבאה!</p>
+                <form class="flex">
+                    <input type="email" placeholder="כתובת המייל שלך" class="px-4 py-2 rounded-r-lg border-t border-b border-r border-gray-300 w-full focus:outline-none focus:border-blue-500" />
+                    <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded-l-lg hover:bg-gray-700">הרשמה</button>
+                </form>
+            </div>
+            <!-- عمود 4: شبكات التواصل -->
+            <div>
+                <h4 class="font-bold text-lg mb-4">עקבו אחרינו</h4>
+                <div class="flex space-x-4 space-x-reverse">
+                    <!-- أيقونات SVG لشبكات التواصل -->
+                    <a href="#" aria-label="פייסבוק"><svg class="icon w-6 h-6 hover:text-blue-600" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg></a>
+                    <a href="#" aria-label="אינסטגרם"><svg class="icon w-6 h-6 hover:text-pink-600" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path></svg></a>
+                    <a href="#" aria-label="יוטיוב"><svg class="icon w-6 h-6 hover:text-red-600" viewBox="0 0 24 24"><path d="M21.58 7.19c-.23-.86-.9-1.52-1.76-1.76C18.25 5 12 5 12 5s-6.25 0-7.82.43c-.86.24-1.53.9-1.76 1.76C2 8.75 2 12 2 12s0 3.25.43 4.81c.23.86.9 1.52 1.76 1.76C5.75 19 12 19 12 19s6.25 0 7.82-.43c.86-.24 1.53-.9 1.76-1.76C22 15.25 22 12 22 12s0-3.25-.43-4.81zM9.5 15.5V8.5l6 3.5-6 3.5z"></path></svg></a>
+                </div>
+            </div>
+        </div>
+        <!-- شريط الحقوق -->
+        <div class="border-t border-gray-300">
+            <div class="container mx-auto px-4 py-4 text-center text-sm">
+                &copy; 2025 Castro. כל הזכויות שמורות.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
