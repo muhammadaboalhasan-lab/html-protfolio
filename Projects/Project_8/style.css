@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ??????? ???????? */
+.MAIN_CONRAINER {
+  width: 92%;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  padding: 20px;
+}
+
+/* ??????? */
+.cardDivs {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 25px 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(200, 200, 200, 0.45);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+   -3px -3px 10px rgba(255, 255, 255, 0.8);
+
+  transition: 0.25s ease;
+}
+
+.cardDivs:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.12),
+   -3px -3px 10px rgba(255, 255, 255, 1);
+}
+
+/* ????? */
+.firstNameDiv h3 {
+  font-size: 1.45rem;
+  margin: 0;
+  color: #1f2d3d;
+  font-weight: 700;
+}
+
+.lastNameDiv h4 {
+  font-size: 1.15rem;
+  margin: 4px 0 10px 0;
+  color: #3c4a59;
+  font-weight: 600;
+}
+
+/* ??????? */
+.addressDiv h5 {
+  font-size: 0.95rem;
+  color: #5f6c7a;
+  margin: 0 0 12px 0;
+}
+
+/* ??????? */
+.gradesDiv {
+  margin-top: 10px;
+  padding: 14px;
+  background: rgba(245, 247, 250, 0.8);
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  box-shadow:
+    inset 3px 3px 8px rgba(0, 0, 0, 0.08),
+    inset -3px -3px 8px rgba(255, 255, 255, 0.9);
+}
+
+.gradesDiv span {
+  background: #ffffff;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #2f3b4b;
+  box-shadow:
+    2px 2px 6px rgba(0, 0, 0, 0.05),
+   -2px -2px 6px rgba(255, 255, 255, 0.7);
+}
+
+/* ?????? */
+.averageDiv {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.averageDiv span {
+  background: #4c6ef5;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow:
+    0 5px 12px rgba(76, 110, 245, 0.3);
+}

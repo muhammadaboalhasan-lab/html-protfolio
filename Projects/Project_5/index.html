@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="page-bg"></div>
+
+    <div class="main-container">
+
+    <div class="title-main-div">
+        <div>
+            <svg class="svg-icon-style" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#4FC3F7" d="M6 2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6V2z"/>
+                <path fill="#FF8A65" d="M6 2H4a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h2V2z"/>
+                <path fill="#81C784" d="M16 2h2a2 2 0 0 1 2 2v14c0 1.1-.9 2-2 2h-2V2z"/>
+            </svg>
+        </div>
+        <div>
+            <h1 class="title">
+                Students Manager
+            </h1>
+        </div>
+    </div>
+
+
+        <!-- ADD STUDENT -->
+        <div class="card">
+            <h2 class="section-title">
+                <svg width="22" viewBox="0 0 24 24"><path fill="#4f46e5" d="M19 13v-2h-6V5h-2v6H5v2h6v6h2v-6h6z"/></svg>
+                Add New Student
+            </h2>
+
+            <form class="form-grid">
+                <input type="text" id="text-input-FirstName" placeholder="First Name">
+                <input type="text" id="text-input-lastName" placeholder="Last Name">
+                <input type="text" id="text-input-Address" placeholder="Address">
+
+                <button type="button" onclick="AddNewStudent()" class="btn btn-primary">
+                    Add Student
+                </button>
+            </form>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="card">
+            <h2 class="section-title">
+                <svg width="22" viewBox="0 0 24 24"><path fill="#4f46e5" d="m15.5 14 5 5-1.5 1.5-5-5V14h-.79l-.28-.27A6.471 6.471 0 0 1 9.5 16 6.5 6.5 0 1 1 16 9.5c0 1.61-.59 3.09-1.57 4.23l.27.27v.8zM10 14a4 4 0 1 0 0-8a4 4 0 0 0 0 8z"/></svg>
+                Search Students
+            </h2>
+
+            <form class="form-grid">
+                <input type="text" id="text-input-name" placeholder="Search by name">
+
+                <button type="button" onclick="Studentsearcher()" class="btn btn-secondary">
+                    Search
+                </button>
+
+                <button type="button" onclick="AllStudents()" class="btn btn-light">
+                    Show All
+                </button>
+            </form>
+        </div>
+
+        <!-- TABLE DISPLAY -->
+        <div class="card table-card">
+            <h2 class="section-title">Students List</h2>
+
+            <div class="table-wrapper">
+                <table id="Table-ID">
+                    <!--<tr>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Address</th>
+                        <th>Delete</th>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ---------- PAGE BACKGROUND ---------- */
+body {
+    background: linear-gradient(135deg, #0d0d0f, #1c1c24);
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.page-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.13;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+.main-container {
+    width: 100%;
+    max-width: 950px;
+    padding-bottom: 40px;
+}
+
+/* ---------- TITLES ---------- */
+.title-main-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #e2e2ff;
+}
+
+.svg-icon-style
+{
+    margin-bottom: 19px;
+}
+
+/* ---------- CARD (GLASS EFFECT) ---------- */
+.card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 25px #00000088;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255,255,255,0.09);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 40px #000000aa;
+}
+
+/* ---------- SECTION TITLES ---------- */
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    color: #b3b4ff;
+    font-size: 1.3rem;
+}
+
+/* ---------- FORMS ---------- */
+.form-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-grid input[type="text"] {
+    flex: 1;
+    min-width: 30%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.07);
+    color: #fff;
+    transition: 0.2s;
+}
+
+.form-grid input[type="text"]:focus {
+    border-color: #6d83f3;
+    box-shadow: 0 0 8px #6d83f355;
+    outline: none;
+}
+
+/* ---------- BUTTONS ---------- */
+button,
+input[type="button"] {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn-primary {
+    background: #4a6cff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #3f5ae6;
+    box-shadow: 0 0 15px #4a6cff66;
+}
+
+.btn-secondary {
+    background: #00c2e0;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #00a3bf;
+    box-shadow: 0 0 15px #00c2e066;
+}
+
+.btn-light {
+    background: #ffffff;
+    color: #222;
+}
+
+.btn-light:hover {
+    background: #e6e6e6;
+}
+
+/* ---------- TABLE ---------- */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+#Table-ID {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.05);
+}
+
+#Table-ID th {
+    padding: 14px 0;
+    font-size: 1.05rem;
+    background: rgba(255,255,255,0.08);
+    color: #cdd1ff;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#Table-ID td {
+    padding: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #e0e0ff;
+}
+
+/* ---------- ROW HOVER ---------- */
+#Table-ID tr:hover td {
+    background: rgba(255,255,255,0.12);
+}
+
+/* ------------------ DELETE BUTTON (IMPROVED) ------------------ */
+.delete-input-style,
+button.delete-input-style {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #ff2b4a, #ff1744);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    /* ????? ??????? */
+    transition: 
+    transform 0.25s cubic-bezier(.25,.8,.25,1),
+    box-shadow 0.25s cubic-bezier(.25,.8,.25,1),
+    background 0.25s cubic-bezier(.25,.8,.25,1);
+    
+    /* ?? ???? */
+    box-shadow: 0 4px 10px rgba(255, 23, 68, 0.45);
+}
+
+/* HOVER EFFECT ? ???? ???? ?????? */
+.delete-input-style:hover:not(:disabled) {
+    background: linear-gradient(135deg, #ff0030, #ff1744);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(255, 23, 68, 0.55);
+}
+
+/* ACTIVE EFFECT ? ????? ????? */
+.delete-input-style:active:not(:disabled) {
+    transform: translateY(1px) scale(0.96);
+    box-shadow: 0 3px 8px rgba(255, 23, 68, 0.35);
+}
+
+/* DISABLED STATE ? ????? ??????? */
+.delete-input-style:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    background: #b6b6b6;
+    box-shadow: none;
+    transform: none;
+}
+
+
+/* ---------- RESPONSIVENESS ---------- */
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 1.1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    #Table-ID td,
+    #Table-ID th {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .form-grid input[type="text"] {
+        min-width: 100%;
+    }
+}

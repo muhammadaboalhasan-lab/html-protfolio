@@ -6,7 +6,7 @@ body
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-image: url(./images/â€”Pngtreeâ€”abstract\ cute\ background\ portfolio_1447420.png);
+    background-image: url(./images/??”Pngtree??”abstract\ cute\ background\ portfolio_1447420.png);
 
 }
 a
@@ -82,7 +82,7 @@ a
     display: flex;
 
 }
-.box-1-image, .box-2-image, .box-3-image, .box-4-image, .box-5-image
+.box-1-image, .box-2-image, .box-3-image, .box-4-image, .box-5-image, .box-6-image, .box-7-image, .box-8-image, .box-9-image
 {
     width: 100%;
     height: 100%;
@@ -119,6 +119,35 @@ a
     background-position: center;
     background-image: url(./images/Future-of-Web-Development-AI-Chatbots-and-Voice-User-Interfaces.jpg);
 }
+
+.box-6-image
+{
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/istockphoto-2180891756-612x612.jpg);
+}
+
+.box-7-image
+{
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/hq720.jpg);
+}
+
+.box-8-image
+{
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/66701548ebc8e4b1bf95b571_433c3f37c9f0fc687bd95dc003211ffb.jpeg);
+}
+
+.box-9-image
+{
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/i_School-Grades-Bar-Graph_full.jpg);
+}
+
 
 .box-1-text
 {
