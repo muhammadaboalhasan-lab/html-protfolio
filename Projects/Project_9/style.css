@@ -1,0 +1,345 @@
+/*
+    ====================================================================================================
+    CSS Reset and Global Styles (Premium & Harmonious)
+    ====================================================================================================
+*/
+:root {
+    --primary-color: #1a73e8; /* Professional Blue */
+    --secondary-color: #5f6368; /* Dark Gray text */
+    --background-color: #f8f9fa; /* Very light gray background */
+    --card-background: #ffffff; /* Pure white card background */
+    
+    /* New Color Scheme for Availability */
+    --available-accent: #34a853; /* Google Green for Available */
+    --not-available-accent: #70757a; /* Neutral Dark Gray for Not Available */
+    
+    --border-color: #dadce0; /* Light border color */
+    --shadow-subtle: 0 1px 3px 0 rgba(60, 64, 67, 0.1), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+    --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: #202124;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/*
+    ====================================================================================================
+    Header and Controls Styling (Centered Search Bar)
+    ====================================================================================================
+*/
+.top-bar {
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    
+    display: flex;
+    flex-direction: column; /* Change to column for centering */
+    align-items: center; /* Center items horizontally */
+    
+    padding: 20px 30px;
+    background-color: var(--card-background);
+    border-radius: 12px;
+    box-shadow: var(--shadow-subtle);
+    gap: 15px;
+}
+
+.search-bar-style {
+    flex-grow: 0; /* Do not grow */
+    max-width: 600px; /* Increased max-width for better visual weight */
+    width: 100%; /* Take full width of the max-width container */
+    padding: 14px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 15px; /* Space between search bar and buttons */
+    text-align: center;
+}
+
+.search-bar-style:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.avalible-button-style {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 2px 4px rgba(26, 115, 232, 0.3);
+}
+
+.avalible-button-style:hover {
+    background-color: #1565c0;
+    box-shadow: 0 4px 8px rgba(26, 115, 232, 0.4);
+}
+
+.avalible-button-style:active {
+    transform: translateY(1px);
+}
+
+/*
+    ====================================================================================================
+    Main Content Grid (Responsive & Centered)
+    ====================================================================================================
+*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#place-holder-container-id {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 0;
+}
+
+/*
+    ====================================================================================================
+    Car Card Styling (Visually Harmonious)
+    ====================================================================================================
+*/
+.mainDiv-sytle {
+    background-color: var(--card-background);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-subtle);
+    transition: transform 0.3s, box-shadow 0.3s, border-left 0.3s;
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid var(--border-color); /* Default neutral border */
+}
+
+.mainDiv-sytle:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Color Coding for the entire card (Requires JS class addition) */
+.mainDiv-sytle.car-available {
+    border-left-color: var(--available-accent);
+}
+
+.mainDiv-sytle.car-not-available {
+    border-left-color: var(--not-available-accent);
+}
+
+/* Image Section */
+.imgDiv-style {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f1f3f4;
+    order: 1; /* Image is always first */
+}
+
+.imgElement-style {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.mainDiv-sytle:hover .imgElement-style {
+    transform: scale(1.05);
+}
+
+/* Content Section - Clear Information Hierarchy */
+.mainDiv-sytle > div:not(.imgDiv-style) {
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f3f4; /* Very light separator */
+}
+
+/* The JS appends the Kilometers paragraph directly to mainDiv, so we target the P element */
+.mainDiv-sytle > p {
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f3f4;
+    margin: 0; /* Override default paragraph margin */
+}
+
+.totalTriptsDiv-style {
+    border-bottom: none;
+    padding-bottom: 15px;
+}
+
+/* Typography for Car Details */
+.mainDiv-sytle p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--secondary-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Highlight the values */
+.mainDiv-sytle p::after {
+    content: attr(data-value); /* Placeholder for value if JS was modified */
+    font-weight: 600;
+    color: #202124;
+}
+
+/* ====================================================================================================
+   ORDERING LOGIC (Using Flexbox Order)
+   Order: 1. Company, 2. Model, 3. Total Trips, 4. Kilometers, 5. Availability
+   ==================================================================================================== */
+
+/* 1. Company */
+.companyDiv-style {
+    order: 2; /* Second item after image (order 1) */
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: none;
+}
+
+/* 2. Model */
+.modelDiv-style {
+    order: 3; /* Third item */
+    padding-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* 3. Total Trips */
+.totalTriptsDiv-style {
+    order: 4; /* Fourth item */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f1f3f4;
+}
+
+/* 4. Kilometers (Targeting the P element appended directly) */
+.mainDiv-sytle > p {
+    order: 5; /* Fifth item */
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* 5. Availability (Remains at the bottom) */
+.availableDiv-style {
+    order: 6; /* Last item */
+    padding: 0;
+    margin-top: auto;
+}
+
+/* Typography adjustments for the new order */
+.modelParagrah-style {
+    font-size: 24px;
+    font-weight: 700;
+    color: #202124;
+}
+
+.companyParagrah-style {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Status Styling (Bottom Bar) */
+.availableParagrah-style {
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    border-radius: 0 0 12px 12px;
+    transition: background-color 0.3s;
+    color: white; /* Text color is always white for contrast */
+}
+
+/* Color-coding the status bar based on the main card class */
+.car-available .availableParagrah-style {
+    background-color: var(--available-accent);
+}
+
+.car-not-available .availableParagrah-style {
+    background-color: var(--not-available-accent);
+}
+
+/*
+    ====================================================================================================
+    Responsiveness
+    ====================================================================================================
+*/
+
+/* Tablet and smaller desktops */
+@media (max-width: 1024px) {
+    .top-bar, main {
+        max-width: 95%;
+    }
+    #place-holder-container-id {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+    }
+
+    .search-bar-style {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .avalible-button-style {
+        flex-grow: 1;
+    }
+
+    .top-bar, main {
+        max-width: 100%;
+    }
+
+    #place-holder-container-id {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .mainDiv-sytle {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}

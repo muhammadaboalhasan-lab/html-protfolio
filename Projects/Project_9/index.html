@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- The user's original script.js file is assumed to be present and unchanged -->
+    <script src="./script.js" defer></script>
+    <title>Premium Car Rental Dashboard</title>
+</head>
+<body>
+    <header class="top-bar">
+        <!-- The original class and ID names are preserved -->
+        <input class="search-bar-style" id="Search-bar-id" type="text" placeholder="Search by company...">
+
+        <div class="buttons">
+            <!-- onClick() attributes are preserved as requested -->
+            <button class="avalible-button-style" id="avalible-button-id" onclick="AvalibleCars()">Available</button>
+            <button class="avalible-button-style" id="All-button-id" onclick="PrintAllCars()">All Cars</button>
+        </div>
+    </header>
+
+    <main id="place-holder-container-id">
+        <!-- Car cards will be dynamically inserted here by script.js -->
+    </main>
+</body>
+</html>
