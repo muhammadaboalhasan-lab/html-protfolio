@@ -414,6 +414,33 @@ function UpdatePlan(val)
     //SaveData(topicList,PLAN_DATA_KEY);
 }
 
+function UpdateCollection(val)
+{
+    let button = document.getElementById(`id-collectionButton-cardHead-learning-goal-day-button-${val}`);
+    let correctCounter = 0;
+    let topicIndex;
+    for(let topic = 0; topic < listOfTopics.length; topic++)
+    {
+        if(listOfTopics[topic] == activeSession.goal)
+        {
+            topicIndex = topic;
+            flag = learningGoalsTemp[topic].plan.forEach(lplan => 
+            {
+                if(lplan.completed)
+                    correctCounter++;
+            }
+            );
+        }
+    }
+
+    if(correctCounter == learningGoalsTemp[topicIndex].plan.length)
+    {
+        learningGoalsTemp[topicIndex].collection = true;
+        SaveData(learningGoalsTemp,PLAN_DATA_KEY);
+        button.textContent = "Done";
+    }
+}
+
 function collectionButton_cardHead_0(val)
 {
     UpdatePlan(val);
@@ -441,49 +468,27 @@ function collectionButton_cardHead_4(val)
 
 function collectionButton_day_0(val)
 {
-    let button = document.getElementById(`id-collectionButton-cardHead-learning-goal-day-button-${val}`);
-    let correctCounter = 0;
-    let topicIndex;
-    for(let topic = 0; topic < listOfTopics.length; topic++)
-    {
-        if(listOfTopics[topic] == activeSession.goal)
-        {
-            topicIndex = topic;
-            flag = learningGoalsTemp[topic].plan.forEach(lplan => 
-            {
-                if(lplan.completed)
-                    correctCounter++;
-            }
-            );
-        }
-    }
-
-    if(correctCounter == learningGoalsTemp[topicIndex].plan.length)
-    {
-        learningGoalsTemp[topicIndex].collection = true;
-        SaveData(learningGoalsTemp,PLAN_DATA_KEY);
-        button.textContent = "Done";
-    }
+    UpdateCollection(val);
 }
 
 function collectionButton_day_1()
 {
-
+    UpdateCollection(val);
 }
 
 function collectionButton_day_2()
 {
-
+    UpdateCollection(val);
 }
 
 function collectionButton_day_3()
 {
-
+    UpdateCollection(val);
 }
 
 function collectionButton_day_4()
 {
-
+    UpdateCollection(val);
 }
 
 
