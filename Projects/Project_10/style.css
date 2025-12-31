@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.brand-name {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-auth {
+    flex: 1;
+    min-width: 300px;
+}
+
+.login-form {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.auth-input {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    flex: 1;
+    min-width: 120px;
+}
+
+.btn-auth {
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: #667eea;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-auth:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.field-message {
+    font-size: 0.75rem;
+    color: #e74c3c;
+    min-height: 1rem;
+}
+
+/* Welcome message in header */
+#welcoming-id-message {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Disconnect button */
+.disconnect-button-style {
+    padding: 0.75rem 2rem;
+    background: white;
+    color: #667eea;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Poppins', sans-serif;
+}
+
+.disconnect-button-style:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.disconnect-button-style:active {
+    transform: translateY(0);
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+
+.main-content {
+    min-height: calc(100vh - 200px);
+    padding: 3rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* ============================================
+   SIGNUP SECTION
+   ============================================ */
+
+.signup-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.signup-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.signup-card h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.subtitle {
+    color: #999;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-field {
+    flex: 1;
+}
+
+.form-field label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.form-input {
+    padding: 0.85rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-alert {
+    color: #e74c3c;
+    font-weight: 600;
+    text-align: center;
+    min-height: 1.2rem;
+}
+
+.btn-submit {
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.signup-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+    color: #666;
+}
+
+.signup-footer a {
+    color: #667eea;
+    font-weight: 700;
+}
+
+/* ============================================
+   LEARNING SECTION
+   ============================================ */
+
+.learning-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Welcome message */
+.smallTextDiv-style {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.smallTextaragraph-style {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Plan creation */
+.createPlanDiv-style {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.lableGetTotalTime-input-style {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.inputGetTotalTime-input-style {
+    padding: 0.75rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    min-width: 150px;
+    transition: all 0.3s;
+}
+
+.inputGetTotalTime-input-style:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.creatButton-button-style {
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.creatButton-button-style:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+}
+
+/* ============================================
+   LEARNING GOAL CARDS
+   ============================================ */
+
+[class*="style-card-learning-goal-day-"] {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+    border-left: 5px solid #667eea;
+}
+
+[class*="style-card-learning-goal-day-"]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header */
+[class*="style-cardHead-learning-goal-day-"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+}
+
+[class*="style-h3cardHead-learning-goal-day-"] {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+[class*="style-h4cardHead-learning-goal-day-"] {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-bottom: 0.5rem;
+}
+
+[class*="style-pcardHead-learning-goal-day-"] {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Card Body */
+[class*="style-cardBody-learning-goal-day-"] {
+    padding: 1.5rem;
+}
+
+/* Task items */
+[class*="style-dTaskCardBody-"] {
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+[class*="style-dTaskCardBody-"]:last-child {
+    margin-bottom: 0;
+}
+
+[class*="style-dTaskCardBody-"]:hover {
+    background: #f0f4ff;
+    border-left-color: #764ba2;
+}
+
+[class*="style-ptask-"] {
+    font-weight: 700;
+    color: #667eea;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+[class*="style-ptaskTopic-"] {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+[class*="style-ptaskTime-"],
+[class*="style-pavailableMinutesPerDay-"],
+[class*="style-ptaskSessions-"],
+[class*="style-ptaskAdjustedTimePerSession-"],
+[class*="style-ptaskcompleted-"],
+[class*="style-ptaskCompletedAt-"] {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+/* Card Footer */
+[class*="style-cardFooter-learning-goal-day-"] {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+[class*="style-collectionButton-"] {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+[class*="style-collectionButton-"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 3rem 1rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-col h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-col a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    color: #999;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar-auth {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .login-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .auth-input {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .btn-auth {
+        width: 100%;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .signup-card {
+        padding: 1.5rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .createPlanDiv-style {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .inputGetTotalTime-input-style {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .creatButton-button-style {
+        width: 100%;
+    }
+
+    [class*="style-cardFooter-learning-goal-day-"] {
+        justify-content: center;
+    }
+
+    [class*="style-collectionButton-"] {
+        width: 100%;
+    }
+
+    #welcoming-id-message {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .disconnect-button-style {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .navbar-brand {
+        gap: 0.5rem;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .signup-card {
+        padding: 1rem;
+    }
+
+    .signup-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .form-input {
+        padding: 0.75rem 0.875rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-submit {
+        padding: 0.875rem;
+    }
+
+    [class*="style-cardHead-learning-goal-day-"] {
+        padding: 1rem;
+    }
+
+    [class*="style-cardBody-learning-goal-day-"] {
+        padding: 1rem;
+    }
+
+    [class*="style-cardFooter-learning-goal-day-"] {
+        padding: 1rem;
+    }
+
+    [class*="style-pcardHead-learning-goal-day-"] {
+        font-size: 1.1rem;
+    }
+
+    .smallTextDiv-style {
+        padding: 1.5rem;
+    }
+
+    .smallTextaragraph-style {
+        font-size: 1rem;
+    }
+
+    .disconnect-button-style {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.9rem;
+    }
+}
