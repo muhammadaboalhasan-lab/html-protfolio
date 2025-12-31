@@ -178,7 +178,7 @@ function ElementCreator(element, eValue)
 
 let activeSession = GetSessionData();
 
-    function PrintData(data)
+function PrintData(data)
     {
         let inputGetTotalTime = document.getElementById('inputGetTotalTime-input-id');
         let divElementsList = [];
@@ -281,7 +281,7 @@ let activeSession = GetSessionData();
                     }
                 }
                 //secondContent.append(...divElementsList);
-    }
+}
 
 if(Object.keys(activeSession).length > 0)
 {
@@ -471,22 +471,22 @@ function collectionButton_day_0(val)
     UpdateCollection(val);
 }
 
-function collectionButton_day_1()
+function collectionButton_day_1(val)
 {
     UpdateCollection(val);
 }
 
-function collectionButton_day_2()
+function collectionButton_day_2(val)
 {
     UpdateCollection(val);
 }
 
-function collectionButton_day_3()
+function collectionButton_day_3(val)
 {
     UpdateCollection(val);
 }
 
-function collectionButton_day_4()
+function collectionButton_day_4(val)
 {
     UpdateCollection(val);
 }
